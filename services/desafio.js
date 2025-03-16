@@ -7,7 +7,7 @@ export default function desafioServices() {
     const [loadingHistorico, setLoadingHistorico] = useState(false);
     const [refetchDesafio, setRefetchDesafio] = useState(true);
     
-    const serverUrl = 'http://localhost:3001';
+    const serverUrl = process.env.NEXT_PUBLIC_BASEURL;
 
     const insertDesafioDiario = async () => {
         
